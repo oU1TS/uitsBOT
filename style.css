@@ -19,27 +19,22 @@ body {
   justify-content: space-between;
 }
 
-li {
+.button {
   background-color: #ff0000ad;
   color: #fff;
   font-weight: bold;
-  padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   transition: 0.1s;
-  padding: 0;
+  padding: 1rem;
   border: 1px solid black;
+  display: block;
 }
 
-li:hover {
+.button:hover {
   background-color: #d10101ad;
   cursor: pointer;
 }
 
-li a {
-  display: block;
-  padding: 1rem;
-  position: relative;
-}
 .title {
   text-align: center;
   font-size: 3rem;
@@ -60,4 +55,13 @@ li a {
   grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
   gap: 1rem; /* Gap between items */
   text-align: center;
+}
+
+.courses {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem 0rem;
+  border: 2px solid black;
 }
