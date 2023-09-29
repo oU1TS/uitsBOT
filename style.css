@@ -28,6 +28,7 @@ body {
   padding: 1rem;
   border: 1px solid black;
   display: block;
+  text-align: center;
 }
 
 .button:hover {
@@ -64,4 +65,12 @@ body {
   padding: 1rem;
   margin: 1rem 0rem;
   border: 2px solid black;
+}
+.back-button {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 30px; /* Adjust the width to your preference */
+  height: auto; /* Automatically adjust the height */
+  z-index: 9999; /* Ensure it's on top of other elements */
 }

@@ -8,6 +8,9 @@
     <title>UITS NoteBot</title>
   </head>
   <body>
+    <a href="#" class="back-button" onclick="goBack()">
+      <img src="../src/left_arrow.png" alt="Back" class="back-button" />
+    </a>
     <div class="container">
       <h1 class="title">CGPA Calculator</h1>
       <h2 class="text-center text-2xl mb-8">Please select your semester</h2>
@@ -18,10 +21,13 @@
         <a class="button" href="cgpa/semester2.html" id="semster2"
           >2nd Semester</a
         >
-        <a class="button" id="semster3">3rd Semester</a>
+        <a class="button" href="cgpa/semester3.html" id="semster3"
+          >3rd Semester</a
+        >
       </div>
 
       <div id="calculator-container"></div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
