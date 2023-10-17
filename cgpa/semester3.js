@@ -49,6 +49,9 @@ document.addEventListener("DOMContentLoaded", function () {
     subjectValues.chem175 = parseFloat(this.value) * 3;
   });
 
+  const cgpaDiv = document.getElementById("cgpa");
+  const cgpaValue = document.getElementById("cgpaValue");
+  cgpaDiv.classList.add("hidden");
   // Example: Display the object in console when a button is clicked
 
   const submitButton = document.getElementById("submitButton");
@@ -64,7 +67,10 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       finalResult = finalResult / 18.8;
-      console.log(finalResult.toFixed(2));
+
+      cgpaValue.textContent = `Your CGPA is : ${finalResult.toFixed(2)}`;
+
+      cgpaDiv.classList.remove("hidden");
     }
   });
 });
